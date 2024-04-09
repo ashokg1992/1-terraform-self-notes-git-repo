@@ -1,0 +1,1 @@
+# 1.terraform-self-notes-git-repo
