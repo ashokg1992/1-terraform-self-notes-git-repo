@@ -1,4 +1,4 @@
- 200 Terraform Interview Q&A
+ <!-- 200 Terraform Interview Q&A
 1. What is Terraform?
 Terraform is an open-source infrastructure as code (IaC) tool developed by HashiCorp that allows
 users to define and provision data center infrastructure using a high-level configuration language
@@ -1851,4 +1851,4 @@ secret_string = jsonencode({
 username = "example_user"
 password = "example_password"
 })
-}
+} -->
