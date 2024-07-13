@@ -1,4 +1,4 @@
- **About Terraform**
+ <!-- **About Terraform**
 
 **Basic Commands for Terraform**
 
@@ -380,4 +380,4 @@ resource "aws_sns_topic" "example" {
 ```
 - This script creates an SNS topic named `example-topic`.
 
-.
+. -->
