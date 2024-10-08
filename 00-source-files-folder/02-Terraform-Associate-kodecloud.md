@@ -90,7 +90,85 @@ terraform
 
 # 
 
+# ebs types
 
+- io1 -- ssd -- for business critical apps
+-i02 -- ssd-- latency critical apps
+-gp2 --ssd --general purpose
+-st1 -HDD --low cost frequenetly,high throughput intensive workloads
+-st2- HDD --low cost less frequently access  workloads
+
+
+# terraform functions
+- file function: 
+- length fucntin 
+- toset function: to convert a list to set
+- 
+
+a)
+-  numeric functions
+	- max: to find larget number
+	-min
+	- we can also use variables as functions. 
+	-ceil function: gives closest number , 10.9  ~ 11
+	- floor
+- string functions
+	-split function.
+	-lower
+	-upper
+	-title : capitalize first letter
+	-substr : cut the string based on range we given 
+		-substr(var.ami,0,7)  # cuts variable from 0 to 7 letters
+	- join
+	-index : to find index of element 
+	- element function : to get particular index element
+	- contains function : check element is present or not
+	- 
+-collection functions
+- type conversion functions
+
+- map function 
+	- keys are used to get only argumets
+	- values function is used to get values
+	- lookup function is used get key and valules
+
+# provisioners
+- to run scripts on locally or remote machines we use provisioners.
+- we do write commands  in "inline" block and in "connection" block we give details to connect remote server.
+- any resource that is crated while the provisioning, if it fails then it is marked as  tainted by tf.
+then we set to continue for creating resource by using" on_failue= continue "  in provisoner block.
+
+
+# taint and debugging it
+-
+
+# terraform import
+- while we import any resource by terraform, it does not update configureationfile,it just update state file.
+- to configure that resource into configuration file, we crate an empty resource block for that resource , so that we will get any error.
+- 
+
+# terraform moudules
+- 
+
+# terraform operators
+- logical and operator (&&) is used to check  two Boolean numbers
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
 
 
 
